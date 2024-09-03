@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+	  <!-- properties for containerisation -->
+	  <PublishProfile>DefaultContainer</PublishProfile>
+	  <ContainerBaseImage>mcr.microsoft.com/dotnet/aspnet:8.0</ContainerBaseImage>
+	  <ContainerImageTags>1.2.3-alpha2;latest</ContainerImageTags>
+	  
+	  <!-- if we want to use a different container registry - for example AWS ECR <ContainerRegistry></ContainerRegistry>-->
+  </PropertyGroup>
+
+</Project>
